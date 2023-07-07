@@ -4,12 +4,14 @@ import MidSection from "./MidSection";
 import Services from "./Services";
 
 function Landing() {
-    return ( <>
-        <NavBar />
-        <Slideshow />
-        <MidSection />
-        <Services />
-    </> );
+  return (
+    <div className="w-full">
+      <NavBar />
+      <Slideshow />
+      <MidSection />
+      <Services />
+    </div>
+  );
 }
 
 export default Landing;

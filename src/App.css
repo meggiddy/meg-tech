@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,bold,italic&subset=latin,latin-ext");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-content {
+  position: relative;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.slide-text h1 {
+  position: relative;
+}
+
+.slide-text .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d1d1d1;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.slide-text.slide-in {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
 .App {
   text-align: center;
 }

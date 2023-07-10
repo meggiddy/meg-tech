@@ -2,7 +2,7 @@ function Services() {
   return (
     <>
       <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full h-96">
+        <div id="slide1" className="carousel-item relative w-full">
           <img
             src="/assets/doodles/ladies.jpg"
             className="w-full"
@@ -17,7 +17,7 @@ function Services() {
             </a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full h-96">
+        <div id="slide2" className="carousel-item relative w-full">
           <img
             src="/assets/doodles/woman-doodle.jpg"
             className="w-full"
@@ -32,7 +32,7 @@ function Services() {
             </a>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full h-96">
+        <div id="slide3" className="carousel-item relative w-full">
           <img
             src="/assets/doodles/doodle.jpg"
             className="w-full"
@@ -47,7 +47,7 @@ function Services() {
             </a>
           </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full h-96">
+        <div id="slide4" className="carousel-item relative w-full">
           <img
             src="/assets/doodles/painting.jpg"
             className="w-full"

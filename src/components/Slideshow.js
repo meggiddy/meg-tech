@@ -60,6 +60,16 @@ function SlideShow() {
               <SlideText showSlideText={currentSlide === 2} />
             </div>
           </div>
+          <div
+            className={`carousel-item w-full ${
+              currentSlide === 2 ? "active" : ""
+            }`}
+          >
+            <div className="slide-content">
+              <img alt="hero" src="/assets/slides/ladyback.jpg" />
+              <SlideText showSlideText={currentSlide === 2} />
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -3,6 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.animated-letters{
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  color: white;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:50px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:500px; top:100px;}
+  75%  {background-color:green; left:50px; top:200px;}
+  100% {background-color:red; left:50px; top:0px;}
+}
+
+
 .navbar {
   position: absolute;
   top: 0;
@@ -44,7 +66,7 @@
 }
 
 .slide-text.slide-in {
-  animation: slideInLeft 1s ease-in-out;
+  animation: slideInLeft 2s ease-in-out;
 }
 
 @keyframes slideInLeft {
@@ -54,7 +76,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
 }
 

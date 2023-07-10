@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
+import NavBar from "./NavBar";
 
 export function SlideText({ showSlideText }) {
   return (
-    <div
-      className={`slide-text ${showSlideText ? "slide-in" : ""}`}
-    >
+    <div className={`slide-text ${showSlideText ? "slide-in" : ""}`}>
       <h1 className="font-serif text-8xl p-4">
         Meggverse
         <span className="line" />
@@ -27,40 +26,43 @@ function SlideShow() {
   }, [currentSlide]);
 
   return (
-    <div className="slide-show">
-      <div className="w-full carousel rounded-box">
-        <div
-          className={`carousel-item w-full ${
-            currentSlide === 0 ? "active" : ""
-          }`}
-        >
-          <div className="slide-content">
-            <img alt="hero" src="/assets/slides/lady.jpg" />
-            <SlideText showSlideText={currentSlide === 0} />
+    <>
+      <NavBar />
+      <div className="slide-show">
+        <div className="w-full carousel rounded-box">
+          <div
+            className={`carousel-item w-full ${
+              currentSlide === 0 ? "active" : ""
+            }`}
+          >
+            <div className="slide-content">
+              <img alt="hero" src="/assets/slides/lady.jpg" />
+              <SlideText showSlideText={currentSlide === 0} />
+            </div>
           </div>
-        </div>
-        <div
-          className={`carousel-item w-full ${
-            currentSlide === 1 ? "active" : ""
-          }`}
-        >
-          <div className="slide-content">
-            <img alt="hero" src="/assets/slides/ocean.jpg" />
-            <SlideText showSlideText={currentSlide === 1} />
+          <div
+            className={`carousel-item w-full ${
+              currentSlide === 1 ? "active" : ""
+            }`}
+          >
+            <div className="slide-content">
+              <img alt="hero" src="/assets/slides/ocean.jpg" />
+              <SlideText showSlideText={currentSlide === 1} />
+            </div>
           </div>
-        </div>
-        <div
-          className={`carousel-item w-full ${
-            currentSlide === 2 ? "active" : ""
-          }`}
-        >
-          <div className="slide-content">
-            <img alt="hero" src="/assets/slides/pinkHaus.jpg" />
-            <SlideText showSlideText={currentSlide === 2} />
+          <div
+            className={`carousel-item w-full ${
+              currentSlide === 2 ? "active" : ""
+            }`}
+          >
+            <div className="slide-content">
+              <img alt="hero" src="/assets/slides/pinkHaus.jpg" />
+              <SlideText showSlideText={currentSlide === 2} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

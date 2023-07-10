@@ -3,6 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 2; /* Ensure the navbar appears above the slide show */
+}
+
+.slide-show {
+  position: relative;
+  z-index: 1; /* Ensure the slide show stays below the navbar */
+}
+
+
 .slide-content {
   position: relative;
 }

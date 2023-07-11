@@ -1,4 +1,5 @@
 import Birds from "../animations/bird";
+import Letters from "../animations/letters";
 
 function Services() {
   return (
@@ -78,7 +79,8 @@ function Services() {
           </div>
         </div>
       </div>
-      <Birds />
+
+      <Letters />
     </>
   );
 }

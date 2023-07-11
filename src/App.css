@@ -3,12 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.animated-letters{
+.animated-letters {
   width: 300px;
   height: 300px;
   border-radius: 10%;
   color: white;
-  background-color: red;
+  background-color: pink;
   position: relative;
   animation-name: example;
   animation-duration: 10s;
@@ -17,13 +17,32 @@
 }
 
 @keyframes example {
-  0%   {background-color:red; left:50px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:500px; top:100px;}
-  75%  {background-color:green; left:50px; top:200px;}
-  100% {background-color:red; left:50px; top:0px;}
+  0% {
+    background-color: red;
+    left: 100px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 500px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 500px;
+    top: 100px;
+  }
+  75% {
+    background-color: green;
+    left: 100px;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 50px;
+    top: 0px;
+  }
 }
-
 
 .navbar {
   position: absolute;
@@ -38,7 +57,6 @@
   position: relative;
   z-index: 1; /* Ensure the slide show stays below the navbar */
 }
-
 
 .slide-content {
   position: relative;
@@ -80,7 +98,6 @@
   }
 }
 
-
 .App {
   text-align: center;
 }
@@ -119,3 +136,5 @@
     transform: rotate(360deg);
   }
 }
+
+
